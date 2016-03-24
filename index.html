@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>8 3UserLogin</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="signup" class="form-signin">
+        <h2 class="form-signin-heading">Sign Up</h2>
+        <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up!</button>
+      </form>
+    </div>
+
+    <div class="wrapper">
+      <form id="login" class="form-signin">
+        <h2 class="form-signin-heading">Already a Member? Login</h2>
+        <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="wrapper1">
+      <form class="form-signin" id="messageInput">
+        <h2 class="form-signin-heading">Oh User!</h2>
+        <!-- <input type='text' id='nameInput' placeholder='Name'>
+        <input type='text' id='messageInput' placeholder='Message'> -->
+        <div id='messagesDiv'></div>
+        <input id="textmessages" type="text" class="form-control" name="message" placeholder="Message" required=""/>
+        <button class="btn btn-lg btn-primary btn-block say" type="submit">Say Something</button>
+      </form>
+    </div>
+
+    <script src="js/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.min.js"></script>
+  </body>
+</html>
